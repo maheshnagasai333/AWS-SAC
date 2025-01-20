@@ -1,0 +1,1 @@
+=> Both AWS and Customers are responsible security and compliance under the AWS shared responsibility model?

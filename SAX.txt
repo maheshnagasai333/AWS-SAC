@@ -1,0 +1,9 @@
+1) Design  secure Architectures => 30 
+
+2) Design  Resilent Architectures => 26 
+
+3) Design  High performing Architectures => 24
+
+4) Design  cost optimised Architectures => 24
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+<style>
+body{
+	
+}
+.container {
+	display: flex;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+}
+
+nav {
+	position: relative;
+	top: 20px;
+	left:-50px;
+	height: 1px;
+	width: 620px;
+	background:#8FBC8B ;
+	border-radius: 9px;
+	padding: 30px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+	color: #023F53;
+	z-index: 1;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	font-size: 16.5px;
+	font-weight: 540;
+	padding: 20px;
+	position: relative;
+	top: -45px;
+	cursor: pointer;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #023F53;
+	cursor: pointer;
+}
+
+nav ul li:after {
+	content: '';
+	width: 0;
+	height: 3px;
+	background: black;
+	position: relative;
+	left: 0;
+	bottom: -10px;
+	transition: 0.7s;
+}
+
+nav ul li:hover::after {
+	width: 100%;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding: 0;
+	margin: 0;
+	background: #8FBC8B;
+	border-radius: 6px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	z-index: 99;
+}
+
+.dropdown-menu li {
+	list-style: none;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu li {
+	position: relative;
+	top: 1px;
+}
+
+#viewPlanButton {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+.form {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	top:-425px;
+	left:1000px;
+	height:350px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	background:#8FBC8B;
+	border-radius:5px;
+}
+
+.text {
+	font-size: 15px;
+	color:#006400;
+}
+
+.text-input {
+	font-size: 20px;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	color:#006400;
+}
+
+#submit {
+	font-size: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+#result {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	top:-425px;
+	left:1000px;
+	text-align: center;
+}
+
+button {
+	font-size: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+	top:-425px;
+	left:1000px;
+	position:relative;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+		<div class="main_main_logo">
+			<h3
+				style="position: relative; left: -190px; font-family: cursive; color: #023F53;">
+				My Diet
+				<h2 style="position: relative; left: 0px; font-family: cursive; top: -22px;">Planner</h2>
+			</h3>
+		</div>
+		<nav>
+		<ul>
+			<li><a href="main_home.xhtml">Home</a></li>
+			<li><a href="about_us.xhtml">About Us</a></li>
+			<li><a href="make_your_plan.xhtml">Make Your Plan</a></li>
+			<li><a href="myDiet.xhtml">My Diet</a></li>
+			<li class="dropdown">Body Care
+				<ul class="dropdown-menu">
+					<li><a href="faceCare.xhtml">Face</a></li>
+					<li><a href="haircare.xhtml">Hair</a></li>
+				</ul>
+			</li>
+		</ul>
+		</nav>
+	</div>
+	<img width="700" height="500" src="images/bmi_make.jpg"></img>
+	
+	<div class="form" id="form">
+		<h3 style="font-size: 25px;position:relative;left:70px;top:40px;color:#006400">Calculate Your BMI</h3>
+		<div class="row-one">
+			<p style="position:relative;left:70px;top:40px" class="text">Age</p>
+			<input style="position:relative;left:70px;top:40px" type="text" class="text-input" id="age" autocomplete="off"
+				required="true" />
+		</div>
+
+		<div class="row-two">
+			<p style="position:relative;left:70px;top:40px" class="text">Height (cm)</p>
+			<input style="position:relative;left:70px;top:40px" type="text" class="text-input" id="height_1"
+				autocomplete="off" required="true" />
+
+			<p style="position: absolute; top: 170px; left: 182px;" class="text">Weight
+				(kg)</p>
+			<input style="position:relative;left:70px;top:40px" type="text" class="text-input" id="weight_1"
+				autocomplete="off" required="true" />
+		</div>
+
+		<button style="position:relative;left:70px;top:60px" type="submit" onclick="validateForm()" id="submit">Submit</button>
+	</div>
+
+	<div id="result"></div>
+	<script src="makemyplan.js"></script>
+</body>
+</html>

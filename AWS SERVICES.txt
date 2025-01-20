@@ -1,0 +1,534 @@
+Aamzon EC2 :
+----------
+
+=>  Amazon EC2 can be scaled (increased or decreased) using AWS auto scaling 
+
+=> allows you to install and run a self-managed relational database
+
+AWS Professional Services :
+--------------------------
+
+=> can assist in evaluating an application for migration to the cloud
+
+AWS Direct Connect :
+------------------
+
+=> AWS Direct Connect ,  uses dedicated, private network connections between your intranet and Amazon VPC
+
+=> AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing
+you with a private, high bandwidth network connection between your network and your VPC.
+
+=> A company requires a dedicated network connection between its on-premises servers and the AWS Cloud
+
+=> can be used to provide network connectivity between an on-premises network and a VPC
+
+Amazon CloudWatch :
+-----------------
+=> It will generate alerts based on estimates monthly bills
+
+=> Amazon CloudWatch should be used to create a billing alarm
+
+=> can be used to monitor and receive alerts for AWS account root user AWS Management Console sign-in events
+
+=> will help users determine if an application running on an Amazon EC2 instance has sufficient CPU capacity
+
+=> that can be used to proactively monitor and plan for the service quotas of AWS resources
+
+=> You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions,
+   troubleshoot issues, and discover insights to keep your applications running smoothly.
+
+AWS Identity and Access Management :
+----------------------------------
+
+=> makes it easy to create and manage AWS users and groups, and provide them with secure access to AWS resources at no charge
+
+=> With IAM, you can specify who can access which services and resources, and under which conditions. You can use IAM to securely control individual and
+
+   group access to your AWS resources. 
+
+AWS Budgets:
+------------
+=> It will allow a user to set custom cost and usage limits, and will alert when the thresholds are exceeded
+
+AWS Cost Management tools :
+--------------------------
+
+=> Break down AWS costs by day, service, and linked
+   AWS account.
+
+=> Create budgets and receive notifications if 
+   current of forecasted usage exceeds the budgets.
+
+AWS Global Accelerator :
+-----------------------
+
+=> A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional
+endpoints to improve application availability.
+
+=> Improved availability of applications deployed on AWS
+
+=> Decreased latency to reach applications deployed on AWS
+
+
+VPC Flow Logs :
+--------------
+
+=> can be used to capture information about incoming and outgoing traffic in an AWS VPC infrastructure
+
+AWS Partner Network (APN) :
+--------------------------
+
+=> can assist in evaluating an application for migration to the cloud
+
+AWS CloudHSM :
+-------------
+
+=> Helps users meet contractual and regulatory compliance requirements for data security by using dedicated hardware
+appliances within the
+AWS Cloud
+
+AWS Transit GateWay : 
+-------------------
+
+=> allows a user to easily scale connectivity among thousands of VPCs 
+
+
+
+Amazon RDS :
+-----------
+
+=> It manages to maintain OS 
+
+=> A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks
+including provisioning, patching, and performing backups
+
+=> The purpose of using Amazon RDS is Automated Backups and Software Patching
+
+=> A company would like to host its MySQL databases on AWS and maintain full control over the operating system, database installation, and configuration.
+Which AWS service should the company use to host the databases then we use Aws RDS
+
+=> It offers automatic backup by default
+                                    
+
+AWS CloudTrail :
+---------------
+
+=> needs to be enabled to track all user account changes within the AWS Management Console
+
+=> A user would like to encrypt data that is received, stored, and managed by AWS CloudTrail by using AWS Cloud trail
+
+
+AWS VPN :
+--------
+=> provide a user with connectivity between the AWS Cloud and on-premises resources
+
+=> enables users to securely connect to AWS resources over the public internet
+
+=> can be used to provide network connectivity between an on-premises network and a VPC
+
+AWS KMS(Key Management Service) :
+--------------------------------
+
+=> is used to provide encryption for Amazon EBS?
+
+=> Create and manage keys for encryption and decryption of data
+
+=> will provide a way to generate encryption keys that can be used to encrypt data
+
+Amazon Athena:
+-------------
+=> can be used to query stored datasets directly from Amazon S3 using standard SQL
+
+=> Amazon Athena: Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so
+   
+   there is no infrastructure to manage, and you pay only for the queries that you run.
+ 
+
+
+Consolidated billing Tool :
+--------------------------
+
+=> best suited for combining the billing of AWS accounts that were previously independent from one another
+
+AWS Monthly Calculator :
+-------------------------
+
+=> The AWS Simple Monthly Calculator enables you to estimate the monthly cost of AWS services for your use case based on your expected usage.
+
+AWS Organizations :
+-----------------
+
+=> enables users to consolidate billing across multiple accounts
+
+=> Implementing consolidated billing
+
+=> Enforcing the governance of AWS accounts
+
+=> helps restrict the AWS services, resources, and individual API actions the users and roles in each member account can access
+
+=> It will centrally manage billing and allow controlled access to resources across AWS accounts
+
+=> enables users to get one bill and easily track charges for multiple AWS accounts
+
+AWS ELASTIC BEAN STALK :
+----------------------
+
+=> You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring.
+
+=> provides automation to set up an application including provisioning, load balancing, auto-scaling
+
+=> It will monitor health of Application
+
+=> A company wants the ability to quickly upload its applications to the AWS Cloud without needing to provision underlying resources then we use Amazon Elastic Bean Stalk
+
+
+AWS WAF :  ( WAF: Web Application Fire Wall )
+---------
+
+=> AWS WAF is a web application firewall that helps protect web applications from common web exploits that could affect application availability,
+compromise security, or consume excessive resources
+
+=> Can enhance network security by blocking requests from a particular network for a web application on AWS
+
+=> A retail company has recently migrated its website to AWS. The company wants to ensure that it is protected from SQL injection attacks. The website uses an Application Load Balancer to distribute traffic to multiple Amazon EC2 instances. In this case AWS WAF will be helpfull.
+
+=> A company needs to block SQL injection attacks. Then we use AWS WAF
+
+
+Amazon VPC  :
+------------
+
+=> provides inbound and outbound network ACLs to harden external connectivity to Amazon EC2?
+
+AWS Lambda:
+-----------
+
+=> can be used to automatically scale an application up and down without making capacity planning decisions
+
+=> is suitable for an event-driven workload
+
+Amazon Inspector :
+-----------------
+
+=> It provides automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities
+on those instances.
+
+AWS Billing and Cost Management :
+--------------------------------
+
+=> is used to pay AWS bills, and monitor usage and budget costs
+
+Amazon GuardDuty:
+----------------
+
+=> helps identify malicious or unauthorized activities in AWS accounts and workloads
+
+AWS Macie :
+----------
+
+=> A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3 Then AWS Macie Will be helpfull 
+
+AWS CONFIG :
+-----------
+
+=> A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource
+changes. Then AWSConfig willbe usefull
+
+=> can be used to track resource changes and 
+   establish compliance
+
+=> It is use full to monitor changes in AWS 
+   resources
+
+AWS Total Cost of Ownership (TCO) Calculator :
+---------------------------------------------
+
+=> A company is planning to migrate from on-premises to the AWS Cloud. Which AWS tool or service provides detailed reports on estimated cost savings after migration
+
+=> It will estimate savings when comparing the AWS Cloud to an on-premises environment
+
+=> It will isentify security that grants Un restricted access to limites list of ports
+
+AWS Marketplace :
+----------------
+
+=> A company wants to try a third-party ecommerce solution before deciding to use it long term then AWS Market place is use full .
+
+Amazon DynamoDB :
+----------------
+
+=> Amazon DynamoDB is a managed NoSQL database
+
+=> Amazon DynamoDB can be scaled (increased or decreased) using AWS auto scaling 
+
+=> A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database
+software. Then we can use Amazon DynamoDB 
+
+Amazon CloudFront:
+------------------
+
+=> Users are reporting latency when connecting to a website with a global customer base.
+Amazon CloudFront will improve the customer experience by reducing latency
+
+=> enables users to create copies of resources across AWS Regions
+
+=> will deliver the static content with low latency
+
+Network ACLs :
+-------------
+
+=> AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS
+
+=> Network ACLs acts as a firewall to control traffic in and out of subnets within a VPC
+
+AWS Snowball :
+--------------
+
+=> can be used to move data from on-premises data centers to AWS
+
+=> is designed to transfer petabytes of data in and out of the cloud
+
+=> A company is migrating to Amazon S3. The company needs to transfer 60 TB of data from an on-premises data center to AWS within 10 days. TEN AWS Snow ball will be use full
+
+Amazon RedShift :
+----------------
+
+=> provides a user the ability to warehouse data in the AWS Cloud
+
+=> It enables to store data in AWS Cloud
+
+=> is a relational database compatible with MySQL and PostgreSQL
+
+=>  Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses .
+
+AWS Artifact :
+---------------
+
+=> AWS service provides on-demand of AWS security and compliance documentation
+
+=> It is the best resource for a user to find compliance-related information and reports about AWS
+
+=> A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS
+compliance reports and AWS agreements.In this situation AWS Artifact will be use full .
+
+=> During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report.
+
+
+=> It will be used to share share software packages
+
+ NOTE : If you see the word " AUDIT or Compliance " then that questuion answer will be AWS Artifact 
+
+
+Amazon Polly :
+-------------
+
+=> can be used to turn text into life-like speech
+
+
+AWS Database Migration Service (AWS DMS) :
+----------------------------------------
+
+=> can be used to move data from on-premises data centers to AWS
+
+
+AWS Trusted Advisor :
+-------------------
+=>It will identify security groups that grant unrestricted access  to limited list of ports 
+
+=> can be used to monitor AWS service limits
+
+=> It provides  status of Amazon S3 bucket permissions.
+ 
+=> It tells Whether multi-factor authentication is enabled for the AWS account root user.
+
+=> It tells if any security groups are configured to allow unrestricted access
+
+=> Improving security by proactively monitoring the AWS environment
+
+=> Implementing enforced tagging across AWS resources
+
+Amazon S3 :
+----------
+
+=> It will store objects 
+
+=> Amazon S3 is best to run Static website
+
+=> It is a serverless service 
+
+AWS Cloud Formation :
+---------------------
+
+=> It will automate application deployment in AWS
+
+=> It will deploy Infrastructure as Code 
+
+AWS Cloud Watch :
+-----------------
+
+=> It is use full to track CPU usage 
+
+Amazon VPN :
+-----------
+
+=>  lets you create an encrypted connection over the public Internet from your on-premises network to the AWS global network
+
+
+AWS Cost Explorer :
+------------------
+
+=> It will understand and manage AWS cost
+
+=> company wants to forecast the cost of running a large application on AWS , then we can use Cost explorer to get this information
+
+=>  help you get an idea of what your future costs and usage might be
+
+=> should use to get a prediction of the next month's bill for the services you use
+
+AWS STORAGE GATWAY :
+--------------------
+
+=> AWS Storage Gateway to create backup copies of your on-premises data to AWS cloud storage
+
+=>  helps on-premises applications connect to AWS Cloud-based storage and caches the data locally for low-latency access
+
+=> It provides hybrid cloud storage that gives you on-premises access to virtually unlimited storage
+
+AWS PRICING CALCULATOR :
+-----------------------
+
+=> It is ussefull to cost estimate for running the infrastructure
+
+Amazon DynamoDB :
+----------------
+
+=> A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database software. The we use Amazon DynamoDB 
+
+=> An application requires a database that offers consistent performance and latency that can be measured in single-digit milliseconds. Then we use Amazon Dynamo DB 
+
+AWS X-RAY :
+------------
+
+=> AWS X-RAY provides the capability to view end-to-end performance metrics and troubleshoot distributed applications . 
+
+
+AMAZON AURORA :
+---------------
+
+=>  provides automated backups of data by default
+
+=>  Amazon Aurora is a MySQL and PostgreSQL
+
+Amazon Kinesis :
+---------------
+
+=>  If you collect and analyze the streaming data in real time , then we use Amazon Kinesis
+
+Amazon API Gateway :
+--------------------
+
+=> Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications
+
+
+VPC EndPoints :
+---------------
+
+=> A VPC endpoint enables connections between a virtual private cloud (VPC) and supported services like DynamoDB etc .
+
+
+Internet GateWay :
+-------------------
+
+=>  It allows communication between your VPC and the internet
+
+Amazon SageMaker :
+-----------------
+
+=> used to build and deploy machine learning (ML) models for any use case
+
+Amazon CodeGuru :
+------------------
+
+=> Amazon CodeGuru is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines
+   of code.
+
+Amazon Transcribe :  Amazon Transcribe is an automatic speech recognition service that converts audio to text. 
+-----------------
+
+Vertical Scaling :  You can increase or decrease the capacity of existing services/instances
+------------------
+
+Horizontal Scaling : To scale horizontally (scaling in or out), you add more instances to your system to spread out the workload across them. Horizontal
+------------------      
+                     scaling is especially important for companies that need high availability services with a requirement for minimal downtime.
+
+AWS Shield : AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS.
+----------
+
+AWS Certificate Manager :    AWS service helps you to deploy private SSL/TLS certificates
+--------------------------
+
+AWS CODE COMMIT :  AWS CodeCommit is a highly scalable, managed source control service that hosts private Git repositories
+----------------
+
+AWS Code Deploy :  Should be used to deploy code automatically in AWS Lambda
+----------------
+
+
+AWS Fargate : AWS Fargate is a serverless service that helps you to run Amazon ECS containers without having to manage servers or clusters of Amazon EC2 
+-----------  
+              instances.
+
+
+Amazon Neptune : it is a fully-managed graph database service 
+---------------
+
+AWS Batch :  AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. 
+-----------
+
+AWS Elatic File System :  That automatically scale to higher throughput levels and can be connected with multiple Amazon EC2 instances
+------------------------
+
+Amazon Light Sail :   the easiest way to deploy web applications such as WordPress is through AWS Light Sail
+-------------------
+
+Security Group :   Security groups act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance  
+--------------
+                   level.
+
+
+Network Access Control List :  It is used to control incoming and outgoing traffic at the subnet level
+----------------------------
+
+AWS Cognito :  Lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily
+------------
+
+AWS X-Ray :  With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of 
+---------
+             performance issues and errors. 
+
+
+AWS Pricing Calculator : AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS.
+----------------------
+
+
+AWS Transcribe :    Voive to text  
+----------------
+
+AWS Pollo :   Text to Voice 
+-----------
+
+AWS Elastic Encoder :  Converts Video or Audio from one format to other
+---------------------
+
+
+AWS Glue :Will be used to 
+---------- prepare data for analysis
+
+
+
+
+
+
+
+ 

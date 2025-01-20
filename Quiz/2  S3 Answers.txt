@@ -1,0 +1,43 @@
+Answers
+
+1. Answer: a
+Explanation: In shared access to your AWS account, you can give other people permission to administer and use resources in your Amazon web services account without sharing your password or access key.
+2. Answer: b
+Explanation: With S3 service, you can host a static website, which means it gives highly scalable and available solutions for static websites (static content).
+3. Answer: b
+Explanation: Simple storage service, S3 helps to easily store and fetchdata from anywhere on the web with web service.
+4. Answer: c
+Explanation: The foundational web service and the first service introduced by AWS is Amazon S3.
+5. Answer: a
+Explanation: Amazon S3 is a cloud object storage.
+6. Answer: d
+Explanation: Objects are manipulated as the whole unit like containers called buckets. In the buckets, we cannot create sub-buckets.
+7. Answer: a
+Explanation: Amazon S3 bucket region is global and it can be manageable at a global level.
+8. Answer: d
+Explanation: Objects consist of object data, metadata, and unique identifier.
+9. Answer: b
+Explanation: Size of objects are from 1 byte to 5 TB of data in Amazon S3
+10. Answer: d
+Explanation: A key can be up to 1024 bytes of Unicode including embedded slashes, backslashes, dots, and dashes.
+11. Answer: b
+Explanation: URL http://bucket_ip.s3.amazonaws.com/key.doc, here "bucket_ip" is the bucket name of your choice and "key.doc" is the key.
+12. Answer: d
+Explanation: With read after write consistency, as soon as you put a new object, you have access to read object immediately.
+13. Answer: b
+Explanation: Amazon S3 standard storage is 99.99% availability of objects over a one-year period.
+14. Answer: a
+Explanation : Amazon S3 standard storage is designed for 99.999999999% durability.
+15. Answer: b
+Explanation: When you upload your file successfully, you get a 200 HTTP code.
+16. Answer: b
+Explanation: Two central actions are needed to be performed for reducing your storage costs. Automatic transition of data from one storage to another ii. Automatic deletion of data after a particular duration 
+17 Answer: a
+Explanation: Amazon Glacier is also a cloud storage service, but this storage is used for optimizing data archiving and cheap cost long-term backup.
+18. Answer: c
+Explanation: It is a hybrid cloud storage provider offering nearly unlimited cloud storage on request. It is a way of using AWS S3 managed storage to supplement on premise storage. It can also be used within a VPC in a similar way
+19. Answer: b
+Explanation: The policy document in IAM is in JSON format.
+
+
+

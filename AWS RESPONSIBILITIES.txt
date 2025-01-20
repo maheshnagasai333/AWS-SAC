@@ -1,0 +1,13 @@
+* Ensuring that application data is encrypted at rest
+
+* Ensuring that users have received security training in the use of AWS services
+
+* Applying updates to the hypervisor
+
+* Physical and environmental controls
+
+* Physical security of hardware
+
+* Network infrastructure and virtualissation of 
+  Infrastructure
+

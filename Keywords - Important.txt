@@ -1,0 +1,153 @@
+Keywords
+--------
+cloud-> ondemand resource sharing over internet or LAN.
+Region->500mi,disaster recovery(natural disasters).
+Availability zones->maintainance,high speed connectivity,99,one or more dc(data center).
+Edge Location->CDN,closest point,caching.
+Agility->Improvise,fast.
+Operational Excellene->Development,run workloads efficiently,anticipate failure,small changes.
+Security->IAM,Tracability,laayers.
+Reliability->failure recovery,Auto Scaling(elasticity).
+Performance Efficiency->Advanced technology.
+Cost Optimisation->stop heavy spending.
+Sustainability->long term goals.
+Security -> Both aws and customer are responsible.
+
+
+AWS Tools and Services with Keywords
+------------------------------------
+Occational Services
+-------------------
+secure access to desktop applications - Amazon AppStream 2.0
+CONVERT TO FORMAT Play on multiple devices - Amazon Elastic Transcoder
+sentiment analysis - Amazon Comprehend 
+machine learning capability - Amazon Rekognition 
+low latency on hybrid - AWS Outposts
+regional regulatory requirements - AWS Compliance Program 
+visual reports (like graphs) - Amazon QuickSight
+service limit - AWS Service Quotas
+text to speech - Amazon Polly
+
+Regular Services
+----------------
+Auto Scaling -> Horizontally increases or decreases the resource (ec2) with respect to load.
+IAM Access Analyzer -> Who is having which access, recommend
+MFA -> Most Secured IAM, Mobile OTP
+edge locations - Amazon CloudFront, AWS Global Accelerator, Route53
+Improves Caching - Amazon CloudFront, AWS Global Accelerator, Elastic Cahche, DAX
+
+GaurdDuty -> Thread detection, motitor malicious activity, security findings (block), ingegrate with s3 and lambda for update the findings(list of troubling IP's).
+Inspector -> automated Vulnerabilities, network exposure in ec2 and workloads
+HSM -> Hardware security model, generate and use encryption keys, most secured, costly.
+KMS -> Key management system, generate and manage keys, rotation of key possible, key for key posible
+Secreats Manager -> maintains password and more secure than system manager.
+lambda environment variable -> stores password and uses with lamdba, lambda will not go for other service to store password
+system mamanger -> password can be stored in parameter store as a secure string and refered as a parameter variable where required.
+
+Cloud Formation-> Infrastructure as a code,JSON (or) .yml(yamal) templates,users stack(queue is not used) for creation and deletion.
+Cloud Watch -> monitoring tool,event bridge to launch event,stores metrics and locks(statements),triggers alarm on threshold metric,cloud watch agent to be installed to collect data.
+SNS  -> simple notificaton service,topic and subscribers,end point can be email,SMS,httpURL,aes Service.
+SQS  -> simple queuing service,Aws says donot build monolithic architecture,stores request and delivers to aws service,Supports loosely Coupled architecture.
+Cloud Trial->monitoring service,start,stop,terminate,create of aws services,IAM user activity,90 days log recording,>90 days supports with s3 bucket,capable of sending logs to S3 and cloud Watch.
+Aws Athena -> Query and analyse locks from S3,Cloud trial,Cloud Watch.
+
+Day-2-----------------------------------------------------------
+ Static webhosting:-cheaper storage, like one drive.
+ S3-> global unique bucket name,5GB,Storage,100gb tranfer,100 buckets,20k get requests,2k other requests,S3 with machine learning gives Amazon Macie.
+ VPC- network,sub-net,ACL(Firewall,stateless), precedence rule
+ KMS->Key management Service
+ 6 Storage class of S3 :-
+ 1. Standard :- Simply putting and accessing files.
+ 2. Intellegence-Tiering :- Predicting Pattern
+ 3. Standrd Infrequent access :- When access is infrequent we use this
+ 4. One zone in frequent Access :- only one zone,no backup,reduces cost.
+ 5. S3 Glacier :- very cheap,more retrieve time ,very infrequent access in terms of months
+ 6. S3 Glacier Deep Archive :-not accessing for years.
+ AWS Backup-> Automated, Replace same instances.
+ Snapshot -> point in time recovery ,in new instance,manual,AMI(amazon mechine image)
+ AMI- EBS image
+ EBS(elastic block Storage)-kms Encryption,like hard disk,TFS(Typical to share).
+ EFS(elastic file System)-hierarchal Structure(file Structure),recommended in sharing use case,costly.
+ Snowball :- terabyte data transfer.
+ Storage gateway :- like google photos with file storage gateway
+ volume Storage Gateway->Copies block by block.
+ Tape storage gateway->recording in cloud.
+ EC2 Purchasing :- 
+ 1.spot instance:- Interceptions 2 min notice period(for revoking the system).
+ 2. On Demand - Default one
+ 3.Scheduled :- fixing the time,type,size,cheaper.
+ 4.Savings plans :- Fixing time,tape,cheaper than scheduled.
+ 5. Dedicated host :- Seperated hardware
+ 6.elastic Beanstalk :-EC2 with PAAS,internal load balancing,autoscaling,RDS.
+ AWS Batch : running a job or in a batch of instances.
+ Light sail-> wordpressing,templates,websites.
+ Workspace-> virtual desktop/laptop.
+ Access Analyzer -> which user which access.
+
+Day-3-----------------------------------------------------------
+VPC-> Virtual Private Cloud,Inside Region,overlapping with AZ(Availability Zone).
+Subnet->public,private(No Internet,NAT Gateway),aws service.
+IGW(Internet Gateway) -> At VPC level.
+Routing Table-> IGW to subnet.
+ACL -> Access Control List,Firewall with IGW to Subnet,Stateless,Precedence Rule,Allow or Deny.
+EC2 LifeCycle-> start,stop,reboot,hibernate,terminate.
+Lambda -> Server Less,function,calling through API Gateway(URLS),No charges For Listening(Charges only for running),4 lakh GB Sec(Running)/month
+RDS-> Serverless,Charge For Listening/start to stop,Amazon Aurora(MYSQL,PostgreSql),MYSQL,PostGreSQL,mariaDB,Oracle,SQL Server.
+Dynamo DB-> Serverless,No charge for listening,Query Execution Time Charged,Faster Than RDS,No SQL DB,Session Handling,Dax-Catch(Frequent Query).
+Document DB-> Serverless,No SQL DB.Similar to MongoDB.
+Elastic Catch -> Session Handling,Fastest DB,Costliest DB.
+
+---------------------------------------------------------
+Security------------------------------------------------------->
+Cognito->provides application login(millions of users),user pool,password based,social media based,identity pool (between aws and end user),MFA possible(multi factor authentication).
+API Gateway -> It is URL based,Used to trigger lambda and other services.
+RedShift->Data Ware House.
+Route53->Routes traffic to AWS resources(under various policies->weighted routing,latency based routing,geographical routing,failure routing).
+Amazon Kinesis -> live data gathering(like twitter,facebook),real time,uses shades as queue(Buffer memory).
+AWS Shield -> protects against DOS and DDOS attacks over the server(DOS->Denial of service,DDOS->Distributed denial of service attacks).
+AWS WAF -> web application firewall, protects against bots and exploits, have list of ip address to block
+AWS Artifact -> ondemand access to security and compliance report
+AWS License Manager -> maintains s/w license accross aws services and on premises resources
+AWS Certificate Manager -> ACM provision, manage and deploy SSL/TLS (for https) certificate with AWS and internal conneted services. 
+Amazon Detective -> simplifies investigation process, determine nature and extent of security issues
+AWS Direct Connect -> on premisis to AWS 100+ locations, dedicated connection, fast and secure tranfer
+AWS Glue -> serverless data integration service, discover, prepare, move and integrate data, provide data for analytics, ML, App developemnt
+AWS Config - record and normalize changes, check compilance, deploy rules and remidiation accross account, security monitoring
+----------------------------------------------------------
+
+Management and Billing-------------------------------------------->
+AWS pricing Calculator :- Cost Estimation, input archtechture(like EC2,Lambda),output estimated cost.
+AWS budget :- used to set budget limits and predict future by observing current usage alerts through SNS when alarm triggers
+AWS cost explorer :- Maintains report upto two years,visualize in graphical format,breakdown the reports by account ,subaccounts,teams,producers one report for 24hrs.
+AWS cost and usage Management :- Device report by hours,day and month and also by tags,produce 3 reports per day,sends reports to S3,create,retrieve delete reports are possible.
+
+AWS Management Service and Professional service:-
+Managmnt Service:- response within 24hrs,maintainance,trouble shooting,networking,security.
+Professional service:- Immediate response,dedicated aws person,consultancy,migration,deployment,advanced trouble shooting(supports us in developed aspects).
+
+Aws support Plan:-
+1.basic-free tier,only general Questions.
+2.Developer plan:-suitable for testing and experiment,possible with technical questions.
+3.Enterprise on ramp-suitable for production and critical work loads.
+4.Business plan:-suitable for production workload.
+5.Enterprise:-suitable for machine critical workload.
+
+AWS marketplace:-place to search software as a service.
+
+personal health dashboard ->Monitors health of aws service,health of integrated services(EC2 with EBS),troubleshooting,quick(quicker troubleshoot).
+
+Containers:
+contains docker image,had supporting packages from OS ,can be mount over kernel,can be deployed in any OS.
+
+ECR(elastic container registry)->stores the container and provides for ECS and EKS.
+ECS(Elastic Container Service)->manages simple to moderate applications,free according to aws.
+EKS(Elastic Kubernets Service)->manages complex to large applications,high level scaling,experstise required,aws dashboard will charge,auto scaling.
+CICD(Continuous integration and Continuous deployment)->---
+1.AWS Code Commit->Like github repository,has masterbranch for deployment,possible to create other brances for employee,unit testing will be in sub branches or(other branches), Integration testing will be in min branch.
+2.Aws Code Built->Testing tool,alternate to jenkins(testing tool),Build environment for testing,all successfull built,it creates a artifact or jar file,push the jar to S3.
+3.AWS Code deploy-> deployment service,picks artifact from S3 and deploys  EC2/Lambda.On premises system/aws fargate,In place deployment(In existing system,downtime), blue-green deployment(0 down time,deploy in new instance).
+4. AWS Code Pipleine-> Automate the trigger of code built and code deploy when master branch updated.
+5.AWS Code Star-> Set ups complete pipeline with the pre defined applications which include code commit ,deploy,build,only available in few regions.
+AWS Fargate-> Serverless Computing instance to deploy containers.
+
+

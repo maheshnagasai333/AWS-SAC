@@ -1,0 +1,19 @@
+* Setting up server-side encryption on an Amazon S3 bucket
+
+* Network and firewall configurations
+
+* Encrypting data on the client-side
+
+* Configuring Network Access Control Lists (ACL)
+
+* Managing the VPC network access control lists.
+
+* Encryting data at rest
+
+* Patching of operating systems
+
+* Configuration of the security group
+
+* Security of data in transit
+
+* Data integrity authentication
